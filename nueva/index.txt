@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        h1 {
+            color: #d6336c;
+        }
+        .heart {
+            font-size: 100px;
+            color: red;
+            animation: heartbeat 1s infinite alternate;
+        }
+        @keyframes heartbeat {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); }
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .yes {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        .no {
+            background-color: #999;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Hola! ??</h1>
+        <p>Eres una persona increíble y especial para mí.</p>
+        <p><strong>¿Quieres ser mi San Valentín?</strong></p>
+        <div class="heart">??</div>
+        <button class="button yes" onclick="respuesta('sí')">Sí, quiero ??</button>
+        <button class="button no" onclick="respuesta('no')">No ??</button>
+    </div>
+    <script>
+        function respuesta(opcion) {
+            if (opcion === 'sí') {
+                alert('¡Me haces muy feliz! ??');
+            } else {
+                alert('¡No pasa nada! Siempre serás especial para mí. ??');
+            }
+        }
+    </script>
+</body>
+</html>
